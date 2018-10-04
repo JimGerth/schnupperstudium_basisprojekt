@@ -1,15 +1,9 @@
-'''
-Created on Oct 7, 2017
-
-@author: dij
-'''
 import csv
 import logging
 import time
 
-''' 
-For the spam thing use:'''
-from spam_features.cap_features import cap_word_ratio
+# SPAM:
+from spam_features.cap_features import cap_words_words_ratio
 from spam_features.exclamation_mark_features import amount_exclamation_marks
 from spam_features.length_feature import amount_words
 from spam_features.length_feature import word_sentence_ratio
@@ -17,23 +11,25 @@ from spam_features.negation_feature import negation_sentence_ratio
 from spam_features.questions_feature import amount_question_marks
 from spam_features.re_feature import is_response
 
-
-'''
-For the sentiment thing use:
+# SENTIMENT:
 from sentiment_features.positive_words_feature import ratio_negative_words_words
 from sentiment_features.positive_words_feature import ratio_positive_words_words
-'''
 
 def main():
 
-    base_path = "/informatik2/students/home/schnup09/Desktop/schnup_output/"
+    base_path = "/Users/jim/Desktop/schnupp_output/"
     logging.basicConfig(filename= base_path + 'log.log', level=logging.INFO)
     csv_value_index = 0
     csv_target_label_index = 1
 
-    #data_file_path = "hatespeech_task_train.csv"
-    data_file_path = "spam_task_test.csv"
-    #data_file_path = "sentiment_task_train.csv"
+    # data_file_path = "train_data/hatespeech_task_train.csv"
+    #data_file_path = "test_data/hatespeech_task_test.csv"
+
+    data_file_path = "train_data/spam_task_train.csv"
+    #data_file_path = "test_data/spam_task_test.csv"
+
+    #data_file_path = "train_data/sentiment_task_train.csv"
+    #data_file_path = "test_data/sentiment_task_test.csv"
 
     features_csv_path = base_path + "features.csv"
     data_file_delimiter = "\t"
@@ -47,7 +43,7 @@ def main():
 
     '''
     For the spam thing use:'''
-    feature_functions.append(cap_word_ratio)
+    feature_functions.append(cap_words_words_ratio)
     feature_functions.append(amount_exclamation_marks)
     feature_functions.append(is_response)
     feature_functions.append(amount_words)

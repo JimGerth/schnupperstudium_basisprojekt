@@ -5,7 +5,7 @@ def amount_words(inputtext):
 
 def amount_positive_words(inputtext):
     total_positive_words = 0
-    with open("/informatik2/students/home/schnup09/Desktop/schnupperstudium_basisprojekt/opinion-lexicon-English/positive-words.txt", "r") as f:
+    with open("../opinion-lexicon-English/positive-words.txt", "r") as f:
         for line in f:
             for word in inputtext.split(" "):
                 if line == word + "\n":
@@ -14,7 +14,7 @@ def amount_positive_words(inputtext):
 
 def amount_negative_words(inputtext):
     total_negative_words = 0
-    with open("/informatik2/students/home/schnup09/Desktop/schnupperstudium_basisprojekt/opinion-lexicon-English/negative-words.txt", "r") as f:
+    with open("../opinion-lexicon-English/negative-words.txt", "r") as f:
         for line in f:
             for word in inputtext.split(" "):
                 if line == word + "\n":
