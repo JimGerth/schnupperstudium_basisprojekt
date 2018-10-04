@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="314474a4-6398-4ec2-af1a-941acbf97c74" name="Default Changelist" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hatespeech_task_test.csv" afterPath="$PROJECT_DIR$/test_data/hatespeech_task_test.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hatespeech_task_train.csv" afterPath="$PROJECT_DIR$/train_data/hatespeech_task_train.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sentiment_task_test.csv" afterPath="$PROJECT_DIR$/test_data/sentiment_task_test.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sentiment_task_train.csv" afterPath="$PROJECT_DIR$/train_data/sentiment_task_train.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spam_task_test.csv" afterPath="$PROJECT_DIR$/test_data/spam_task_test.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spam_task_train.csv" afterPath="$PROJECT_DIR$/train_data/spam_task_train.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/schnupperstudium_basisprojekt.iml" afterPath="$PROJECT_DIR$/.idea/schnupperstudium_basisprojekt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modular_arff_builder.py" afterPath="$PROJECT_DIR$/modular_arff_builder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sentiment_features/positive_words_feature.py" afterPath="$PROJECT_DIR$/sentiment_features/positive_words_feature.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spam_features/cap_features.py" afterPath="$PROJECT_DIR$/spam_features/cap_features.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spam_features/questions_feature.py" afterPath="$PROJECT_DIR$/spam_features/questions_feature.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,8 +49,8 @@
       <file leaf-file-name="modular_arff_builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modular_arff_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-93">
-              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="201">
+              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -189,9 +177,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1736111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1736111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -284,10 +271,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/output/features.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1671">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/log.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/omt_train.arff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modular_arff_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="201">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

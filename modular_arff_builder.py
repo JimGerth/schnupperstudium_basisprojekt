@@ -17,7 +17,7 @@ from sentiment_features.positive_words_feature import ratio_positive_words_words
 
 def main():
 
-    base_path = "/Users/jim/Desktop/schnupp_output/"
+    base_path = "output/"
     logging.basicConfig(filename= base_path + 'log.log', level=logging.INFO)
     csv_value_index = 0
     csv_target_label_index = 1
