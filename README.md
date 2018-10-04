@@ -1,0 +1,1 @@
+# schnupperstudium_basisprojekt
