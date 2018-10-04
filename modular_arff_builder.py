@@ -32,12 +32,12 @@ def main():
     csv_target_label_index = 1
 
     #data_file_path = "hatespeech_task_train.csv"
-    data_file_path = "spam_task_train.csv"
+    data_file_path = "spam_task_test.csv"
     #data_file_path = "sentiment_task_train.csv"
 
     features_csv_path = base_path + "features.csv"
     data_file_delimiter = "\t"
-    omtArffName = "omt.arff"
+    omtArffName = "omt_train.arff"
     relationship_name = "@RELATION target"
     class_name = "@ATTRIBUTE TARGET {0, 1}"
 
