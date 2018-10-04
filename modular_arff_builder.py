@@ -8,7 +8,7 @@ import logging
 import time
 
 ''' 
-For the spam thing use:
+For the spam thing use:'''
 from spam_features.cap_features import cap_word_ratio
 from spam_features.exclamation_mark_features import amount_exclamation_marks
 from spam_features.length_feature import amount_words
@@ -16,24 +16,24 @@ from spam_features.length_feature import word_sentence_ratio
 from spam_features.negation_feature import negation_sentence_ratio
 from spam_features.questions_feature import amount_question_marks
 from spam_features.re_feature import is_response
-'''
+
 
 '''
 For the sentiment thing use:
-'''
 from sentiment_features.positive_words_feature import ratio_negative_words_words
 from sentiment_features.positive_words_feature import ratio_positive_words_words
+'''
 
 def main():
 
-    base_path = "/Users/jim/Desktop/schnupp_output/"
+    base_path = "/informatik2/students/home/schnup09/Desktop/schnup_output/"
     logging.basicConfig(filename= base_path + 'log.log', level=logging.INFO)
     csv_value_index = 0
     csv_target_label_index = 1
 
     #data_file_path = "hatespeech_task_train.csv"
-    #data_file_path = "spam_task_train.csv"
-    data_file_path = "sentiment_task_train.csv"
+    data_file_path = "spam_task_train.csv"
+    #data_file_path = "sentiment_task_train.csv"
 
     features_csv_path = base_path + "features.csv"
     data_file_delimiter = "\t"
@@ -46,7 +46,7 @@ def main():
     feature_functions = []
 
     '''
-    For the spam thing use:
+    For the spam thing use:'''
     feature_functions.append(cap_word_ratio)
     feature_functions.append(amount_exclamation_marks)
     feature_functions.append(is_response)
@@ -54,13 +54,12 @@ def main():
     feature_functions.append(word_sentence_ratio)
     feature_functions.append(amount_question_marks)
     feature_functions.append(negation_sentence_ratio)
-    '''
 
     '''
     For the sentiment thing use:
-    '''
     feature_functions.append(ratio_positive_words_words)
     feature_functions.append(ratio_negative_words_words)
+    '''
 
     csv_reader = csv.reader(open(data_file_path), delimiter = data_file_delimiter)
     data_lines = [line for line in csv_reader]
