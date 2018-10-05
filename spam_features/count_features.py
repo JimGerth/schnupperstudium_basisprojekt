@@ -15,3 +15,6 @@ def amount_links(inputtext):
 
 def amount_question_marks(inputtext):
     return {'values': [len(inputtext.split("?"))], 'heads': ['@Attribute amount_question_marks REAL']}
+
+def amount_responses(inputtext):
+    return {'values': [inputtext.count("Re: ")], 'heads': ['@Attribute is_response REAL']}

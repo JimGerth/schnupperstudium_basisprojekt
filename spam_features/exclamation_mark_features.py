@@ -1,5 +1,3 @@
-from spam_features.length_feature import amount_words
-
 def amount_exclamation_marks(inputtext):
     total = inputtext.count("!")
     return {'values': [total], 'heads': ['@Attribute amount_exclamation_marks REAL']}

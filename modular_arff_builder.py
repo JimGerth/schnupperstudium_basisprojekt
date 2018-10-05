@@ -7,7 +7,6 @@ from spam_features.cap_features import *
 from spam_features.count_features import *
 from spam_features.exclamation_mark_features import amount_exclamation_marks
 from spam_features.length_feature import *
-from spam_features.re_feature import is_response
 
 # SENTIMENT:
 from sentiment_features.positive_words_feature import ratio_negative_words_words
@@ -24,8 +23,8 @@ def main():
     # data_file_path = "train_data/hatespeech_task_train.csv"
     #data_file_path = "test_data/hatespeech_task_test.csv"
 
-    data_file_path = "train_data/spam_task_train.csv"
-    #data_file_path = "test_data/spam_task_test.csv"
+    #data_file_path = "train_data/spam_task_train.csv"
+    data_file_path = "test_data/spam_task_test.csv"
 
     #data_file_path = "train_data/sentiment_task_train.csv"
     #data_file_path = "test_data/sentiment_task_test.csv"
@@ -45,7 +44,7 @@ def main():
     spam_feature_functions = [
         cap_words_words_ratio,
         amount_exclamation_marks,
-        is_response,
+        amount_responses,
         amount_words,
         word_sentence_ratio,
         amount_links,
