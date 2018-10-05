@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="314474a4-6398-4ec2-af1a-941acbf97c74" name="Default Changelist" comment="" />
+    <list default="true" id="314474a4-6398-4ec2-af1a-941acbf97c74" name="Default Changelist" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spam_features/count_features.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spam_features/negation_feature.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spam_features/questions_feature.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modular_arff_builder.py" afterPath="$PROJECT_DIR$/modular_arff_builder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/features.csv" afterPath="$PROJECT_DIR$/output/features.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/log.log" afterPath="$PROJECT_DIR$/output/log.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/omt_train.arff" afterPath="$PROJECT_DIR$/output/omt_train.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spam_features/cap_features.py" afterPath="$PROJECT_DIR$/spam_features/cap_features.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spam_features/exclamation_mark_features.py" afterPath="$PROJECT_DIR$/spam_features/exclamation_mark_features.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,18 +58,26 @@
       <file leaf-file-name="modular_arff_builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modular_arff_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\t</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -71,8 +90,11 @@
       <list>
         <option value="$PROJECT_DIR$/sentiment_features/positive_words_feature.py" />
         <option value="$PROJECT_DIR$/spam_features/exclamation_mark_features.py" />
-        <option value="$PROJECT_DIR$/spam_features/questions_feature.py" />
+        <option value="$PROJECT_DIR$/spam_features/link_feature.py" />
         <option value="$PROJECT_DIR$/spam_features/cap_features.py" />
+        <option value="$PROJECT_DIR$/spam_features/space_feature.py" />
+        <option value="$PROJECT_DIR$/spam_features/questions_feature.py" />
+        <option value="$PROJECT_DIR$/spam_features/count_features.py" />
         <option value="$PROJECT_DIR$/modular_arff_builder.py" />
       </list>
     </option>
@@ -105,6 +127,16 @@
               <item name="schnupperstudium_basisprojekt" type="b2602c69:ProjectViewProjectNode" />
               <item name="schnupperstudium_basisprojekt" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="schnupperstudium_basisprojekt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schnupperstudium_basisprojekt" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schnupperstudium_basisprojekt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schnupperstudium_basisprojekt" type="462c0819:PsiDirectoryNode" />
+              <item name="spam_features" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -134,6 +166,23 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.modular_arff_builder">
+    <configuration name="cap_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spam_features" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="schnupperstudium_basisprojekt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spam_features/cap_features.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="modular_arff_builder" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,9 +200,14 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.modular_arff_builder" />
+      <item index="1" class="java.lang.String" itemvalue="Python.cap_features" />
+    </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.modular_arff_builder" />
+        <item index="1" class="java.lang.String" itemvalue="Python.cap_features" />
       </list>
     </recent_temporary>
   </component>
@@ -175,8 +229,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1736111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1736111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -208,9 +263,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -237,38 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spam_features/length_feature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spam_features/exclamation_mark_features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spam_features/questions_feature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spam_features/cap_features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/features.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1671">
@@ -285,21 +306,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/spam_task_train.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8458">
+          <caret line="15" column="15248" lean-forward="false" selection-start-line="15" selection-start-column="15246" selection-end-line="15" selection-end-column="15248" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_features/cap_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_features/re_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_features/length_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/output/omt_train.arff">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
+        <state relative-caret-position="-4920">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_features/exclamation_mark_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_features/link_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_features/count_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="86" lean-forward="true" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_features/negation_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam_features/questions_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="84" lean-forward="true" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modular_arff_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

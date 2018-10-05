@@ -3,12 +3,10 @@ import logging
 import time
 
 # SPAM:
-from spam_features.cap_features import cap_words_words_ratio
+from spam_features.cap_features import *
+from spam_features.count_features import *
 from spam_features.exclamation_mark_features import amount_exclamation_marks
-from spam_features.length_feature import amount_words
-from spam_features.length_feature import word_sentence_ratio
-from spam_features.negation_feature import negation_sentence_ratio
-from spam_features.questions_feature import amount_question_marks
+from spam_features.length_feature import *
 from spam_features.re_feature import is_response
 
 # SENTIMENT:
@@ -22,6 +20,7 @@ def main():
     csv_value_index = 0
     csv_target_label_index = 1
 
+    '''choose right data set'''
     # data_file_path = "train_data/hatespeech_task_train.csv"
     #data_file_path = "test_data/hatespeech_task_test.csv"
 
@@ -33,29 +32,37 @@ def main():
 
     features_csv_path = base_path + "features.csv"
     data_file_delimiter = "\t"
-    omtArffName = "omt_train.arff"
     relationship_name = "@RELATION target"
     class_name = "@ATTRIBUTE TARGET {0, 1}"
 
+    if data_file_path == "train_data/spam_task_train.csv":
+        omtArffName = "omt_train.arff"
+    elif data_file_path == "test_data/spam_task_test.csv":
+        omtArffName = "omt_test.arff"
+
     start = time.time()
 
-    feature_functions = []
+    spam_feature_functions = [
+        cap_words_words_ratio,
+        amount_exclamation_marks,
+        is_response,
+        amount_words,
+        word_sentence_ratio,
+        amount_links,
+        amount_cap_lock_words,
+        amount_of_3_contiguous_spaces,
+        amount_dollar_signs,
+        amount_money,
+        amount_percent_sign
+    ]
 
-    '''
-    For the spam thing use:'''
-    feature_functions.append(cap_words_words_ratio)
-    feature_functions.append(amount_exclamation_marks)
-    feature_functions.append(is_response)
-    feature_functions.append(amount_words)
-    feature_functions.append(word_sentence_ratio)
-    feature_functions.append(amount_question_marks)
-    feature_functions.append(negation_sentence_ratio)
+    sentiment_feature_functions = [
+        ratio_positive_words_words,
+        ratio_negative_words_words
+    ]
 
-    '''
-    For the sentiment thing use:
-    feature_functions.append(ratio_positive_words_words)
-    feature_functions.append(ratio_negative_words_words)
-    '''
+    ''' choose right function set '''
+    feature_functions = spam_feature_functions
 
     csv_reader = csv.reader(open(data_file_path), delimiter = data_file_delimiter)
     data_lines = [line for line in csv_reader]
