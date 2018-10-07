@@ -1,5 +1,5 @@
 def amount_of_3_contiguous_spaces(inputtext):
-    return {'values': [inputtext.count("     ")], 'heads': ['@Attribute amount_of_3_contiguous_spaces REAL']}
+    return {'values': [inputtext.count("   ")], 'heads': ['@Attribute amount_of_3_contiguous_spaces REAL']}
 
 def amount_dollar_signs(inputtext):
     return {'values': [inputtext.count("$")], 'heads': ['@Attribute amount_dollar_signs REAL']}

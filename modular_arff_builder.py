@@ -20,7 +20,7 @@ def main():
     csv_target_label_index = 1
 
     '''choose right data set'''
-    # data_file_path = "train_data/hatespeech_task_train.csv"
+    #data_file_path = "train_data/hatespeech_task_train.csv"
     #data_file_path = "test_data/hatespeech_task_test.csv"
 
     #data_file_path = "train_data/spam_task_train.csv"
